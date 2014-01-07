@@ -1,0 +1,7 @@
+<?php
+
+/**
+ * Returns the rendered site slogan.
+ *
+ * @ingroup themeable
+ */

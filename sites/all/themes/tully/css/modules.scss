@@ -1,0 +1,742 @@
+@import "colours.scss";
+@import 'font-sizes';
+
+.spanner {
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+.spanner.title {
+  padding-left: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+  padding-right: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+//  margin-bottom: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+  margin-top: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+}
+
+.node-type-article .spanner.title {
+  margin-bottom: 0;
+}
+
+
+.site-name {
+  padding-left: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+  margin-top: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+  float:left;
+  clear:both;
+  width:100%;
+}
+
+a.external {
+  font-size: $pxheading3FontSize;
+  margin-left: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+  margin-bottom: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+  line-height: calcLineHeight($pxheading3FontSize, 1);
+
+  color: $stdBlue;
+  float:left;
+  clear:both;
+}
+
+.menu-footer-link {
+  display:none;
+}
+.not-front .menu-footer-link {
+  display:block;
+  border: 1px solid #ddd;
+  float:left;
+  padding: 0 emCalFromPixels($defaultFontSize,$stdLineHeight) + em;
+  margin-left: emCalFromPixels($defaultFontSize,$stdLineHeight) + em;
+  margin-top: emCalFromPixels($defaultFontSize,$stdLineHeight) + em;
+}
+
+//.field-name-field-client-link {
+//  height: auto;
+//  width:auto;
+//}
+
+.group-left .field-name-field-primary-image {
+position: relative;
+  margin-bottom: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+}
+//.group-left .field-name-field-client-link{
+//  position: relative;
+//  top: -$stdLineHeight;
+//  left: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+//  float:left;
+//}
+
+  /* Pager styling */
+  .pager {
+    float: left;
+    width: 100%;
+  }
+
+  .front .pager {
+    margin-top: 2.6em;
+  }
+
+  .pager > li {
+    display: block;
+    padding: 0;
+  }
+
+  .pager > li:first-child {
+    float: left;
+  }
+
+  .pager > li:last-child {
+    float: right;
+  }
+
+  .pager > li > a {
+
+    font-family: 'Georgia', serif;
+    font-size: 2.1em;
+    background-color: orange;
+    border: 1px solid #F29800;
+    line-height: 2.476em;
+    padding: 0 0.5em;
+    display: block;
+    color: #fff !important;
+  }
+
+  .pager > li.pager-current {
+    display: none;
+  }
+
+.field-name-field-primary-image {
+  width: 100%;
+  float:left;
+  clear:both;
+  img {
+    display: block;
+    position: relative;
+  }
+
+}
+.menu > li {
+  font-size:$paragraph;
+  line-height:calcLineHeight($defaultFontSize,1);
+  font-weight:400;
+  list-style: none;
+
+  float:left;
+  clear:both;
+}
+#main-container .menu {
+  padding: 0 emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+}
+
+.bodytext > section p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+#intro {
+  padding-left: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+  padding-right: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: calcLineHeight($pxheading3FontSize,1);
+  width: 100%;
+  //  background-color: #f5f5f5;
+  //    border-bottom: 1px solid #ddd;
+  font-size: 2.1em !important;
+  float: left;
+  clear: both;
+}
+  @media all and (min-width: 460px) {
+    .site-name {
+      margin-left: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em;
+    }
+    #intro {
+      padding-left: emCalFromPixels($pxheading3FontSize,$stdLineHeight)*2 + em !important;
+      padding-right: emCalFromPixels($pxheading3FontSize,$stdLineHeight)*2 + em !important;
+    }
+    .group-right .field-name-body {
+      padding-left: emCalFromPixels($baseFontSize,$stdLineHeight)*2 + em !important;
+      padding-right: emCalFromPixels($baseFontSize,$stdLineHeight)*2 + em !important;
+      max-width: 64em;
+      float:left;
+      clear:both;
+    }
+    .spanner {
+      font-size: $emheading1FontSize !important;
+      padding-left: emCalFromPixels($pxheading1FontSize,$stdLineHeight) + em !important;
+    }
+    .spanner.title {
+      line-height: calcLineHeight($pxheading1FontSize,2);
+      padding-left: emCalFromPixels($pxheading1FontSize,$stdLineHeight)*2 + em !important;
+
+    }
+    #main-container .menu {
+      padding: 0 emCalFromPixels($baseFontSize,$stdLineHeight)*2 + em;
+    }
+    a.external {
+      padding-left: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+    }
+    .menu-footer-link {
+      margin-left: emCalFromPixels($defaultFontSize,$stdLineHeight)*2 + em !important;
+
+    }
+    .node-teaser {
+      .field-name-body {
+        padding: 0 emCalFromPixels($baseFontSize,$stdLineHeight)*2 + em !important;
+      }
+      .portfolio-heading {
+        padding-left:  emCalFromPixels($pxheading3FontSize,$stdLineHeight)*2 + em !important;
+        padding-right:  emCalFromPixels($pxheading3FontSize,$stdLineHeight)*2 + em !important;
+      }
+      .button.more-detail {
+        margin-left: emCalFromPixels($defaultFontSize,$stdLineHeight)*2 + em !important;
+        clear: both;
+        float: left;
+      }
+    }
+    .field-name-field-primary-image {
+      max-width: 940px;
+      margin-bottom: 2.6em;
+      clear: both;
+      img {
+        display: block;
+        position: relative;
+      }
+
+    }
+    .nav-section {
+      padding-left: 5.2em !important;
+    }
+  }
+
+
+
+  /* Portfolio Item */
+  .portfolio-item {
+    width: 100%;
+    padding: 0;
+    float: left;
+    clear: both;
+    margin-bottom: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+  }
+
+  .portfolio-item.views-row-first {
+    margin-top: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+  }
+
+
+
+  @media screen and (min-width: 500px) {
+    .site-name {
+      margin-left: 0;
+      padding-left: emCalFromPixels($pxheading1FontSizeExtraLarge,$stdLineHeight)*2 + em;
+      margin-top: emCalFromPixels($pxheading1FontSizeExtraLarge,$stdLineHeight)*2 + em;
+      line-height: calcLineHeight($pxheading1FontSizeExtraLarge,2);
+    }
+    .node-teaser {
+
+      .field-name-field-primary-image {
+        width: 22.3em !important;
+        float: right !important;
+        clear: none !important;
+        margin-left: 5.2em;
+      }
+      .portfolio-heading {
+        float: none;
+        clear: none !important;
+      }
+      .field-name-body {
+        float: none;
+        clear: none !important;
+      }
+      .button.more-detail {
+        clear: none !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .view-mode-full .field-name-field-primary-image {
+
+      img {
+        max-width: 600px;
+      }
+    }
+  }
+
+  .image-url {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.69);
+    color: #fff;
+    display: block;
+  }
+
+//  .node-teaser {
+//    .field-name-body {
+//      padding: 0 2.6em;
+//    }
+//    .portfolio-heading {
+//      padding-left: 1.238em;
+//    }
+//    .button.more-detail {
+//      margin-left: 1.857em;
+//      margin-top: 1.857em;
+//    }
+//  }
+
+  .field-name-body {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.24em;
+      margin-bottom: 1.24em;
+
+    }
+    p {
+      margin-bottom: 1.625em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media all and (min-width: 1100px) {
+    .sub-template .field-name-field-primary-image img.container {
+      width: 50%;
+      float: left;
+      margin-right: 2em;
+    }
+
+  }
+
+  @media all and (min-width: 1600px) {
+
+    .sub-template .field-name-body > section p {
+      margin-bottom: 1em;
+      text-align: justify;
+      width: 100%;
+
+    }
+
+    .sub-template .case-study.section {
+      margin-left: 40em;
+      width: 60em;
+    }
+
+  }
+
+  .field-name-body {
+    padding: 0 2.6em 2.6em 0;
+    float: left;
+    clear: both;
+    text-align: left;
+  }
+
+  .portfolio-heading {
+    line-height: calcLineHeight($pxheading3FontSize,1);
+    margin: emCalFromPixels($pxheading3FontSize,$stdLineHeight)+em 0;
+    clear: both;
+    float: left;
+  }
+
+  .node-teaser .field-name-field-primary-image {
+    float: left;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .node-teaser .field-name-field-primary-image > .field-items > .field-item > img {
+    float: left;
+    clear: both;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* default button look */
+  .button {
+    border-radius: 0.5em;
+    text-decoration: underline;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+
+  .button.more-detail > a {
+    width: 100%;
+    display: block;
+    color: #164a8e;
+  }
+
+  .more-detail > a {
+
+  }
+
+  .vcard.main {
+    width: 100%;
+    float: left;
+    clear: both;
+    line-height: 1.3em;
+  }
+
+  ul.vcard {
+    list-style: none;
+  }
+
+  .nav-section {
+    padding-left: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+
+    float:left;
+    clear:both;
+    width: 100%;
+    ul > li, & > .block-title {
+      width: 80%;
+      float: left;
+      display: block;
+      text-align: left;
+      font-style: normal;
+
+    }
+    ul > li {
+      font-family: 'Georgia', serif;
+      font-weight: 400;
+    }
+
+  }
+  .nav-section.first {
+    margin-bottom: emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+  }
+
+  .block-title {
+    line-height: calcLineHeight($pxheading2FontSize,2);
+  }
+
+  .nav-section > a, .vcard.nav-style > li {
+    line-height: calcLineHeight($defaultFontSize,1);
+  }
+
+  .nav.main > .nav-section {
+    float: left;
+    width: 100%;
+    clear: both;
+  }
+
+  .nav.main > .nav-section:first-child {
+    margin-bottom: 1em;
+  }
+
+  .nav-section > a {
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  @media screen and (min-width: 700px) {
+
+    #intro > a {
+      color: #000;
+    }
+    .spanner.title {
+      float:left;
+      width:auto;
+      clear:none;
+    }
+    .menu-footer-link {
+      text-align: center;
+      line-height: 2.6em;
+      margin-right: emCalFromPixels($defaultFontSize,$stdLineHeight)*2 + em !important;
+      float:right !important;
+    }
+
+    #page-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav.main.external {
+      display: table;
+      width: 100%;
+      height: auto;
+      border: 0;
+      padding-bottom: 2em;
+    }
+
+    .nav.main.external > .nav-section {
+      float: none;
+      clear: none;
+      width: 40%;
+      display: table-cell;
+      vertical-align: top;
+      padding-bottom: 2em;
+    }
+
+    .nav-section ul, ul.vcard > li, .nav-section > ul > li, .block-title, .nav.main.external > .nav-section:first-child > ul > li {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .nav.main.external > .nav-section:first-child {
+      padding-left: 8%;
+    }
+
+    .button.more-detail {
+      float: left;
+      width: auto;
+      padding: 0;
+    }
+
+    .button.more-detail > a {
+      width: 100% !important;
+      height: 100%;
+      display: block;
+    }
+
+    .button.more-detail > a:hover {
+      color: #6085de;
+
+    }
+
+    .header-link {
+      display: none;
+    }
+
+    .portfolio-item > .field-name-body {
+      padding: 0em 1em 1em 0;
+    }
+
+    ul.vcard {
+      width: 100%;
+    }
+
+    ul.vcard > li {
+      width: 100%;
+      float: left;
+      display: block;
+      font-size: 1.6em;
+      line-height: 1.3em;
+    }
+    .node-teaser .field-name-field-primary-image {
+      width: 33.6em !important;
+    }
+  }
+
+
+  @media screen and (min-width: 920px) {
+  #intro {
+    max-width: 34em;
+  }
+
+    .node-teaser {
+      //    .field-name-field-primary-image {
+      //      float:left !important;
+      //      clear:both !important;
+      //      margin-left:0 !important;
+      //      margin-right: 5.2em;
+      //    }
+      //    .button.more-detail {
+      //      margin-left:0 !important;
+      //    }
+      .field-name-field-primary-image {
+
+        float: left !important;
+        margin-left: 0 !important;
+
+      }
+      .portfolio-heading {
+        float: left;
+        clear: both !important;
+      }
+      .field-name-body {
+        float: left;
+
+      }
+    }
+    .node-teaser .field-name-field-primary-image > .field-items > .field-item > img {
+
+      max-width: 600px;
+    }
+
+    .small-viewport-menu-container {
+      display: none;
+    }
+    .menu-footer-link {
+      display: none;
+    }
+    .spanner {
+      display: block;
+
+    }
+  }
+
+
+
+  ul.vcard {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .nav.main.external > .nav-section {
+    padding-left: 6.24em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    clear: both;
+    float: left;
+    width: 50%;
+  }
+
+  .block-title {
+    margin-left: 0;
+  }
+
+  ul.vcard > li, .nav-section:first-child > ul > li {
+    line-height: 1.7em;
+    margin-left: 0;
+    padding-left: 0;
+    -webkit-transition: padding-left 0.3s ease-in-out;
+    -moz-transition: padding-left 0.3s ease-in-out;
+    -ms-transition: padding-left 0.3s ease-in-out;
+    -o-transition: padding-left 0.3s ease-in-out;
+    transition: padding-left 0.3s ease-in-out;
+  }
+
+  ul.vcard > li:hover, .nav-section:first-child > ul > li:hover {
+    background: #f5f5f5;
+    padding-left: 1em;
+  }
+
+  .nav.main.external {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.4em;
+    display: block;
+    width: 44em;
+    border-right: 1px solid #ddd;
+    height: 100% !important;
+    font-size: 1em;
+  }
+
+  .nav.main.external li {
+    margin-left: 0;
+  }
+
+  .nav.main > .nav-section {
+    display: block;
+    float: left;
+    width: 50%;
+    clear: none;
+  }
+
+  .nav.main.external > .nav-section:first-child {
+    margin-bottom: 2em;
+    padding-left: 6.24em;
+  }
+
+  .group-right .field-name-body {
+    padding-left: 2.476em;
+    padding-right: 2.476em;
+    max-width: 64em
+  }
+
+  .nav-section {
+    ul > li, & > .block-title {
+      a {
+        -webkit-transition: padding-left 0.3s ease-in-out;
+        -moz-transition: padding-left 0.3s ease-in-out;
+        -ms-transition: padding-left 0.3s ease-in-out;
+        -o-transition: padding-left 0.3s ease-in-out;
+        transition: padding-left 0.3s ease-in-out;
+
+      }
+      a:hover {
+        padding-left: 1em;
+      }
+    }
+
+  }
+
+  .portfolio-item {
+    width: 100%;
+
+    float: left;
+  }
+
+  .node-teaser {
+    .field-name-body {
+      padding: 0 emCalFromPixels($baseFontSize,$stdLineHeight) + em;
+    }
+    .portfolio-heading {
+      padding-left: emCalFromPixels($pxheading3FontSize,$stdLineHeight) + em;
+    }
+    .button.more-detail {
+      margin-left: emCalFromPixels($defaultFontSize, $stdLineHeight) + em;
+      margin-top: emCalFromPixels($defaultFontSize, $stdLineHeight) + em;
+      clear: both;
+      float: left;
+      font-size: emCalFromPixels($baseFontSize,$defaultFontSize) + em;
+      line-height: calcLineHeight($defaultFontSize,1);
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+
+    .node-teaser {
+      //    .field-name-field-primary-image {
+      //      float:left !important;
+      //      clear:both !important;
+      //      margin-left:0 !important;
+      //      margin-right: 5.2em;
+      //    }
+      //    .button.more-detail {
+      //      margin-left:0 !important;
+      //    }
+      .field-name-field-primary-image {
+
+        float: left !important;
+        margin-left: 0 !important;
+        margin-right: 5.2em;
+
+      }
+      .portfolio-heading {
+        float: none !important;
+        clear: none !important;
+      }
+      .field-name-body {
+        float: none !important;
+        clear: none !important;
+        p {
+          max-width: 60em;
+        }
+      }
+      .field-name-field-primary-image ~ .field-name-node-link .button.more-detail{
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 920px) and (min-height: 540px) {
+
+    .nav.main > .nav-section {
+      float: left;
+      width: 100%;
+      clear: both;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .mode-teaser .field-name-field-primary-image img {
+      max-width: 435px;
+    }
+
+    .portfolio-item .gc:first-child {
+      clear: both;
+      float: left;
+      width: 50%;
+    }
+
+  }

@@ -1,0 +1,4 @@
+name = Theme Mods
+description = Changes rendered theme output.
+core = 7.x
+files[] = theme_mods.module

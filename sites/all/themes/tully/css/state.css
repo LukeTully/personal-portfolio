@@ -1,0 +1,15 @@
+/* @override 
+	http://localhost/portfolio-v2/css/state.css */
+
+.nav.main.external.expanded {
+	display: block;
+	float: left;
+	clear: both;
+	
+}
+
+.header-link.expanded {
+	background-color: #333;
+	color: #f5f5f5;
+}
+

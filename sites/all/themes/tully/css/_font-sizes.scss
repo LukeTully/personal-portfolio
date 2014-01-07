@@ -1,0 +1,37 @@
+@function calcEmFromBase($baseSize,$newSize){
+  @return $newSize / $baseSize + em;
+}
+@function calcLineHeight($fontSizeInPixels,$numberOfLines){
+
+  $emVal: $stdLineHeight / $fontSizeInPixels;
+  @return $emVal * $numberOfLines + em;
+
+}
+@function emCalFromPixels ($source,$destination){
+
+  @return $destination / $source;
+}
+@function emCalFromEms ($source,$destination){
+
+  @return $destination / $source;
+}
+
+$stdLineHeight: 26px; //Must be set
+$baseFontSize: 10px;
+$defaultFontSize: 16px;
+
+$baseLineHeight: calcLineHeight($baseFontSize,1);
+$pxheading1FontSize: 36px;
+$emheading1FontSize: calcEmFromBase($baseFontSize,$pxheading1FontSize);
+$pxheading1FontSizeExtraLarge: 48px;
+$emheading1FontSizeExtraLarge: calcEmFromBase($baseFontSize,$pxheading1FontSizeExtraLarge);
+$pxheading2FontSize: 24px;
+$emheading2FontSize: calcEmFromBase($baseFontSize,$pxheading2FontSize);
+$pxheading3FontSize: 21px;
+$emheading3FontSize: calcEmFromBase($baseFontSize,$pxheading3FontSize);
+$pxheading4FontSize: 16px;
+$emheading4FontSize: calcEmFromBase($baseFontSize,$pxheading4FontSize);
+
+$paragraph: calcEmFromBase($baseFontSize,16px);
+
+

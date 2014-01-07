@@ -1,0 +1,17 @@
+[17-Oct-2012 06:24:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'webrenos_interiortouches.semaphore' doesn't exist' in /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/database/database.inc:2139
+Stack trace:
+#0 /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/database/database.inc(2139): PDOStatement->execute(Array)
+#1 /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/database/database.inc(664): DatabaseStatementBase->execute(Array, Array)
+#2 /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/database/database.inc(2318): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/webrenos/public in /home/webrenos/public_html/luketully.ca/projects/interior-touches/includes/database/database.inc on line 2139
+[25-Nov-2012 13:40:48 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 33302993 bytes) in /home/webrenos/public_html/luketully.ca/projects/interior-touches/modules/system/image.gd.inc on line 326
+[29-Nov-2012 01:13:33 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 30045201 bytes) in /home/webrenos/public_html/luketully.ca/projects/interior-touches/modules/system/image.gd.inc on line 326
+[16-Feb-2013 14:33:56] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 7680 bytes) in /home1/interip5/public_html/stage/sites/all/modules/ctools/plugins/content_types/block/block.inc on line 324
+[21-Feb-2013 18:54:47] PHP Warning:  POST Content-Length of 13026072 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[21-Feb-2013 18:54:47] PHP Warning:  POST Content-Length of 13026098 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[21-Feb-2013 18:55:36] PHP Warning:  POST Content-Length of 13016902 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[21-Feb-2013 18:55:45] PHP Warning:  POST Content-Length of 13016902 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[21-Feb-2013 19:25:48] PHP Warning:  POST Content-Length of 13027135 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[05-Apr-2013 21:59:05] PHP Fatal error:  Call to undefined function  user_access() in /home1/interip5/public_html/includes/menu.inc on line 3861

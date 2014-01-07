@@ -1,0 +1,39 @@
+/* Initial Layout Styles */
+#page-wrapper {
+  height: auto;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: 0;
+  padding: 0; }
+
+#content-container {
+  padding-top: 2.6em;
+  padding-bottom: 2.6em;
+  float: left; }
+
+#content-container.fulltext {
+  padding-top: 0; }
+
+#masthead {
+  width: 100%; }
+
+#footer {
+  float: left;
+  clear: both;
+  border-top: 1px solid #ddd;
+  padding: 2.6em 0;
+  width: 100%; }
+
+/* Node layout styles within the main content area on the front page */
+/* Display Suite grouping */
+.group-left {
+  width: 100%;
+  float: left;
+  clear: both; }
+
+.group-right {
+  width: 100%;
+  float: left;
+  clear: both; }
+
+/* End initial Layout Style */
